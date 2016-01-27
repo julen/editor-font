@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Test Bed</title>
+  <style type="text/css">
+    @font-face {
+      font-family: 'Raw';
+      src: url('./Raw.ttf') format('truetype');
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 100vh;
+    }
+    .content {
+      max-width: 50%;
+      width: 50vw;
+    }
+
+    .editor,
+    .content {
+      width: 100%;
+
+      font-size: 1.5em;
+    }
+
+    .editor {
+      font-family: 'Raw', sans-serif;
+      font-size: 1em;
+      min-height: 6em;
+    }
+
+    .editor.raw,
+    .content {
+      font-family: 'Raw', monospace;
+    }
+  </style>
+</head>
+<body>
+	<div id="root"></div>
+  <script type="text/javascript" src="./bundle.js"></script>
+</body>
+</html>
